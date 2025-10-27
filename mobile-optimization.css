@@ -1,0 +1,79 @@
+/* Mobile Optimization Enhancements */
+
+/* Ensure all interactive elements are touch-friendly */
+button, a, input {
+    min-height: 44px;
+    min-width: 44px;
+}
+
+/* Improve tap targets */
+.btn-primary, .btn-add, .btn-cart, .btn-back {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Better scrolling on iOS */
+html {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Prevent zoom on input focus for iOS */
+input, textarea, select {
+    font-size: 16px;
+}
+
+/* Improve link readability on mobile */
+a {
+    -webkit-touch-callout: none;
+}
+
+/* Better performance for animations on mobile */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Extra small screens (< 375px) */
+@media (max-width: 374px) {
+    .container {
+        padding: 0 12px;
+    }
+    
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.3rem;
+    }
+    
+    .nav {
+        gap: 0.25rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Landscape orientation optimization */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        padding: 2rem 0;
+    }
+    
+    .hero h2 {
+        font-size: 1.3rem;
+    }
+    
+    .hero p {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    .header, .footer, .btn-add, .btn-back, .btn-cart, .btn-primary {
+        display: none;
+    }
+}
