@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pickle Costumes - The Pickle Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">🥒 Pickle Costumes</h1>
+            <nav class="nav">
+                <a href="#shop">Shop</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <span class="cart-icon">🛒 <span id="cart-count">0</span></span>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Get Your Pickle On!</h2>
+                <p>Premium pickle costumes for every occasion</p>
+                <button class="btn-primary" onclick="scrollToShop()">Shop Now</button>
+            </div>
+        </section>
+
+        <section id="shop" class="shop">
+            <div class="container">
+                <h2>Our Pickle Collection</h2>
+                <div class="products">
+                    <div class="product-card">
+                        <div class="product-image product-1"></div>
+                        <h3>Classic Pickle Costume</h3>
+                        <p>The original pickle look that never goes out of style.</p>
+                        <div class="product-footer">
+                            <span class="price">$39.99</span>
+                            <button class="btn-add" onclick="addToCart('Classic Pickle', 39.99)">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image product-2"></div>
+                        <h3>Luxury Pickle Costume</h3>
+                        <p>Premium materials for the ultimate pickle experience.</p>
+                        <div class="product-footer">
+                            <span class="price">$59.99</span>
+                            <button class="btn-add" onclick="addToCart('Luxury Pickle', 59.99)">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image product-3"></div>
+                        <h3>Giant Pickle Costume</h3>
+                        <p>Make a statement with our oversized pickle costume!</p>
+                        <div class="product-footer">
+                            <span class="price">$79.99</span>
+                            <button class="btn-add" onclick="addToCart('Giant Pickle', 79.99)">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image product-4"></div>
+                        <h3>Baby Pickle Costume</h3>
+                        <p>Perfect for kids - adorable and comfortable!</p>
+                        <div class="product-footer">
+                            <span class="price">$29.99</span>
+                            <button class="btn-add" onclick="addToCart('Baby Pickle', 29.99)">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image product-5"></div>
+                        <h3>Pickle Duo Set</h3>
+                        <p>Two for the price of... two! Get matching pickle costumes.</p>
+                        <div class="product-footer">
+                            <span class="price">$69.99</span>
+                            <button class="btn-add" onclick="addToCart('Pickle Duo Set', 69.99)">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image product-6"></div>
+                        <h3>Glow-in-the-Dark Pickle</h3>
+                        <p>Light up the night with this luminous pickle costume!</p>
+                        <div class="product-footer">
+                            <span class="price">$54.99</span>
+                            <button class="btn-add" onclick="addToCart('Glow Pickle', 54.99)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Pickle Costumes</h2>
+                <p>We're passionate about bringing pickle-themed joy to the world! Our costumes are made with the
+                    highest quality materials and an abundance of green fabric.</p>
+                <p>Whether you're dressing up for Halloween, a costume party, or just because you love pickles - we've
+                    got you covered!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Pickle Costumes. All rights reserved. 🥒</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
