@@ -21,16 +21,22 @@ function showNotification(message) {
         position: fixed;
         top: 20px;
         right: 20px;
-        background: #228b22;
+        background: linear-gradient(135deg, #ff6b35, #8b4513);
         color: white;
         padding: 1rem 2rem;
         border-radius: 10px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 4px 15px rgba(255, 107, 53, 0.5);
         z-index: 1000;
         animation: slideIn 0.3s ease-out;
+        font-weight: bold;
+        border: 2px solid #ff8c52;
     `;
     
     document.body.appendChild(notification);
+    
+    // Add spooky emoji randomly
+    const spookyEmojis = ['🎃', '💀', '👻', '🦇', '🕷️', '👹'];
+    const randomEmoji = spookyEmojis[Math.floor(Math.random() * spookyEmojis.length)];
     
     // Remove after 3 seconds
     setTimeout(() => {
