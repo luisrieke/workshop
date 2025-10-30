@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap');
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #1a1a2e 0%, #2d5016 25%, #7b2d3e 50%, #8b4513 75%, #1a1a2e 100%);
@@ -110,6 +112,7 @@ body::after {
     color: #ff6b35;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(255, 107, 53, 0.5);
     animation: glow 2s ease-in-out infinite alternate;
+    font-family: 'Poppins', sans-serif;
 }
 
 @keyframes glow {
@@ -157,6 +160,8 @@ body::after {
     margin-bottom: 1rem;
     color: #ff6b35;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8), 0 0 20px rgba(255, 107, 53, 0.6);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
 .hero p {
@@ -195,6 +200,8 @@ body::after {
     margin-bottom: 3rem;
     color: #ff6b35;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 15px rgba(255, 107, 53, 0.5);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
 .products {
@@ -204,12 +211,12 @@ body::after {
 }
 
 .product-card {
-    background: rgba(139, 69, 19, 0.3);
+    background: rgba(139, 69, 19, 0.7);
     border-radius: 20px;
     padding: 1.5rem;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    border: 2px solid rgba(255, 107, 53, 0.4);
+    border: 2px solid rgba(255, 107, 53, 0.6);
     backdrop-filter: blur(10px);
 }
 
@@ -251,6 +258,8 @@ body::after {
     margin-bottom: 0.5rem;
     color: #ff6b35;
     text-shadow: 0 0 10px rgba(255, 107, 53, 0.3);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
 .product-card p {
@@ -303,6 +312,8 @@ body::after {
     margin-bottom: 2rem;
     color: #ff6b35;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 15px rgba(255, 107, 53, 0.5);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
 .about p {
